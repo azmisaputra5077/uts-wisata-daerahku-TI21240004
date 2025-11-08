@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Detail Destinasi - Wisata Lombok</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Wisata Lombok</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="destinasi.html">Destinasi</a></li>
+        <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak & Ulasan</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container my-4">
+  <div id="detailContent">
+    <h2 id="destTitle">Detail Destinasi</h2>
+    <p id="destDesc">Memuat informasi destinasi.</p>
+    <img id="destImg" src="assets/img/destinations/gili.jpg" class="img-fluid mb-3" alt="">
+    <h5>Informasi Tambahan</h5>
+    <ul>
+      <li>Jam buka: 06:00 - 18:00</li>
+      <li>Harga tiket: mulai Rp 10.000</li>
+      <li>Fasilitas: parkir, warung, toilet</li>
+    </ul>
+    <p>
+      <a href="destinasi.html" class="btn btn-secondary">Kembali ke daftar</a>
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#detailModal" id="openDetailModal">Lihat Info Singkat</button>
+    </p>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="detailModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 id="modalTitle" class="modal-title">Detail</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div id="modalBody" class="modal-body">Isi detail...</div>
+        <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button></div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-center">
+  <div class="container">
+    <p>© 2025 Wisata Lombok</p>
+  </div>
+</footer>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script>
+// Simple client-side routing to show example details based on query param
+function getParam(name) {
+  var params = new URLSearchParams(location.search);
+  return params.get(name);
+}
+var dest = getParam('dest') || 'gili';
+var mapping = {
+  'gili': {title:'Gili Trawangan', desc:'Pulau dengan pasir putih dan kegiatan snorkeling, diving.', img:'assets/img/destinations/gili.jpg'},
+  'senaru': {title:'Air Terjun Senaru', desc:'Air terjun di daerah Rinjani, trekking dan pemandangan hijau.', img:'assets/img/destinations/senaru.jpg'},
+  'kuta': {title:'Pantai Kuta Lombok', desc:'Pantai populer dengan bukit karang dan ombak untuk surfing.', img:'assets/img/destinations/kuta.jpg'}
+};
+var info = mapping[dest] || mapping['gili'];
+document.getElementById('destTitle').textContent = info.title;
+document.getElementById('destDesc').textContent = info.desc;
+document.getElementById('destImg').src = info.img;
+</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

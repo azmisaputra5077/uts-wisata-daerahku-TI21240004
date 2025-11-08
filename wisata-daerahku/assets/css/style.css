@@ -1,0 +1,254 @@
+/* ==== GLOBAL ==== */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background-color: #f5eded;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+}
+
+/* ==== NAVBAR ==== */
+.navbar {
+  padding: 0.8rem 1rem;
+  background-color: #fff !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #007bff !important;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-nav .nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  padding: 8px 14px;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #fff !important;
+  background-color: #007bff;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+/* ==== HERO SECTION ==== */
+.hero {
+  background-image: url(/assets/img/lombokk.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 140px 20px;
+  margin-top: 56px; /* agar tidak tertutup navbar fixed-top */
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.hero p {
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  font-size: 1.1rem;
+}
+
+.hero .btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* ==== CARD SECTION ==== */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ==== SIDEBAR ==== */
+aside h5 {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+#calcForm input {
+  font-size: 0.95rem;
+}
+
+/* ==== FOOTER ==== */
+footer {
+  background: #f8f9fa;
+  padding: 20px 0;
+  margin-top: 60px;
+  font-size: 0.9rem;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+}
+
+footer p {
+  margin: 0;
+  color: #555;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 992px) {
+  .navbar-nav {
+    gap: 0;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+/* ==== FORM & ULASAN ==== */
+form .form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.15);
+}
+
+form button {
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 600;
+}
+
+/* ==== RATING ==== */
+.rating {
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+}
+
+/* ==== CARD ULASAN ==== */
+#ulasanList .card {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#ulasanList .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* ==== KONTAK & ULASAN ==== */
+.contact-card {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.contact-card .form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.15);
+}
+
+.contact-card button {
+  border-radius: 8px;
+  padding: 10px;
+  font-weight: 600;
+}
+
+/* Info Section */
+.info-section h5 {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #007bff;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* ==== RATING ==== */
+.rating {
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+}
+
+/* ==== CARD ULASAN ==== */
+#ulasanList .card {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#ulasanList .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

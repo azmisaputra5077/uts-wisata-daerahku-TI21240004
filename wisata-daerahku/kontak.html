@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kontak & Ulasan - Wisata Lombok</title>
+
+    <!-- Bootstrap & Custom CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ==== NAVBAR ==== -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Wisata Lombok</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+          aria-controls="nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="destinasi.html">Destinasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeri.html">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="kontak.html">Kontak & Ulasan</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ==== MAIN CONTENT ==== -->
+    <main class="container my-5 pt-5">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Kontak & Ulasan</h2>
+        <p class="text-muted">
+          Isi form berikut untuk mengirim pesan atau ulasan Anda.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Form -->
+        <div class="col-md-6">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <h5 class="mb-3 fw-semibold">Kirim Ulasan</h5>
+              <form id="contactForm" novalidate>
+                <div class="mb-3">
+                  <label for="nama" class="form-label">Nama</label>
+                  <input type="text" class="form-control" id="nama" required />
+                  <div class="invalid-feedback">Nama wajib diisi.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    required
+                  />
+                  <div class="invalid-feedback">Email tidak valid.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="rating" class="form-label">Rating (1–5)</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="rating"
+                    min="1"
+                    max="5"
+                    required
+                  />
+                  <div class="invalid-feedback">Masukkan angka antara 1–5.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="pesan" class="form-label">Ulasan / Pesan</label>
+                  <textarea
+                    class="form-control"
+                    id="pesan"
+                    rows="4"
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback">Isi ulasan Anda.</div>
+                </div>
+                <button class="btn btn-primary w-100" type="submit">
+                  Kirim
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Info & Ulasan -->
+        <div class="col-md-6">
+          <div class="p-3">
+            <h5 class="fw-semibold">Alamat Pengelola</h5>
+            <p class="mb-4">
+              Jl. Pariwisata No.1, Lombok<br />Tel: +62 831 2954 6742
+            </p>
+
+            <h5 class="fw-semibold mb-3">Ulasan Terbaru</h5>
+            <div id="ulasanList">
+              <div class="card border-0 shadow-sm mb-3">
+                <div class="card-body">
+                  <strong>Sari</strong>
+                  <div class="rating text-warning mb-2">★★★★☆</div>
+                  <p class="mb-0 text-muted">
+                    Tempatnya bersih dan sangat indah!
+                  </p>
+                </div>
+              </div>
+              <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                  <strong>Budi</strong>
+                  <div class="rating text-warning mb-2">★★★★★</div>
+                  <p class="mb-0 text-muted">
+                    Pelayanan ramah, pantai luar biasa!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ==== FOOTER ==== -->
+    <footer class="text-center" <!DOCTYPE html>
+      <html lang="id">
+        <head>
+          <meta charset="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <title>Kontak & Ulasan - Wisata Lombok</title>
+
+          <!-- Bootstrap & Custom CSS -->
+          <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+          <link rel="stylesheet" href="assets/css/style.css" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+          />
+        </head>
+
+        <body>
+          <!-- ==== NAVBAR ==== -->
+          <nav
+            class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow-sm"
+          >
+            <div class="container">
+              <a class="navbar-brand" href="index.html">Wisata Lombok</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Beranda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="destinasi.html">Destinasi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="galeri.html">Galeri</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="kontak.html"
+                      >Kontak & Ulasan</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <!-- ==== MAIN CONTENT ==== -->
+          <main class="container my-5 pt-5">
+            <div class="text-center mb-5">
+              <h2 class="fw-bold">Kontak & Ulasan</h2>
+              <p class="text-muted">
+                Hubungi kami atau kirimkan ulasan Anda di bawah ini.
+              </p>
+            </div>
+
+            <div class="row g-4">
+              <!-- FORM KONTAK -->
+              <div class="col-lg-6">
+                <div class="card contact-card shadow-sm border-0">
+                  <div class="card-body">
+                    <h5 class="fw-semibold mb-3 text-primary">
+                      Kirim Ulasan Anda
+                    </h5>
+                    <form id="contactForm" novalidate>
+                      <div class="mb-3">
+                        <label for="nama" class="form-label">Nama</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="nama"
+                          required
+                        />
+                        <div class="invalid-feedback">Nama wajib diisi.</div>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          required
+                        />
+                        <div class="invalid-feedback">Email tidak valid.</div>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="rating" class="form-label"
+                          >Rating (1–5)</label
+                        >
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="rating"
+                          min="1"
+                          max="5"
+                          required
+                        />
+                        <div class="invalid-feedback">
+                          Masukkan angka antara 1–5.
+                        </div>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="pesan" class="form-label"
+                          >Ulasan / Pesan</label
+                        >
+                        <textarea
+                          class="form-control"
+                          id="pesan"
+                          rows="4"
+                          required
+                        ></textarea>
+                        <div class="invalid-feedback">Isi ulasan Anda.</div>
+                      </div>
+
+                      <button class="btn btn-primary w-100" type="submit">
+                        Kirim
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <!-- INFO & ULASAN -->
+              <div class="col-lg-6">
+                <div class="info-section p-3">
+                  <div class="contact-info mb-4">
+                    <h5 class="fw-semibold text-primary">Alamat Pengelola</h5>
+                    <p>
+                      Jl. Pariwisata No.1, Lombok<br />
+                      Tel: <strong>+62 831 2954 6742</strong><br />
+                      Email:
+                      <a
+                        href="mailto:azmisyaputra5077@gmail.com"
+                        class="text-decoration-none"
+                        >azmisyaputra5077@gmail.com</a
+                      >
+                    </p>
+                  </div>
+
+                  <h5 class="fw-semibold text-primary mb-3">Ulasan Terbaru</h5>
+                  <div id="ulasanList">
+                    <div class="card border-0 shadow-sm mb-3">
+                      <div class="card-body">
+                        <strong>Sari</strong>
+                        <div class="rating text-warning mb-2">★★★★☆</div>
+                        <p class="mb-0 text-muted">
+                          Tempatnya bersih dan sangat indah!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="card border-0 shadow-sm">
+                      <div class="card-body">
+                        <strong>Budi</strong>
+                        <div class="rating text-warning mb-2">★★★★★</div>
+                        <p class="mb-0 text-muted">
+                          Pelayanan ramah, pantai luar biasa!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+
+          <!-- ==== FOOTER ==== -->
+          <footer class="text-center">
+            <div class="container">
+              <p>
+                © 2025 Wisata Lombok • Dibuat dengan ❤️ untuk UTS Front-End
+                Developer
+              </p>
+            </div>
+          </footer>
+
+          <script src="assets/js/bootstrap.bundle.min.js"></script>
+        </body>
+      </html>
+
+      <div class="container">
+        <p>
+          © 2025 Wisata Lombok • Dibuat dengan ❤️ untuk UTS Front-End Developer
+        </p>
+      </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

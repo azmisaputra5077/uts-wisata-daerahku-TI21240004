@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daftar Destinasi - Wisata Lombok</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Wisata Lombok</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="destinasi.html">Destinasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeri.html">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontak.html">Kontak & Ulasan</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container my-4">
+      <h2>Daftar Destinasi</h2>
+      <p>Menampilkan 6 destinasi pilihan di Lombok.</p>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img
+              src="assets/img/destinations/gili.jpg"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Gili Trawangan</h5>
+              <p class="card-text">
+                Pulau kecil dengan pasir putih dan snorkeling.
+              </p>
+              <a
+                class="btn btn-sm btn-primary"
+                href="detail.html?dest=gili"
+                data-dest='{"name":"Gili Trawangan","location":"Gili, Lombok Utara","description":"Pulau populer dengan aktivitas snorkeling, diving, dan pantai pasir putih."}'
+                >Lihat Detail</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img
+              src="assets/img/destinations/senaru.jpg"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Air Terjun Senaru</h5>
+              <p class="card-text">
+                Air terjun di kawasan Rinjani, jalur trekking.
+              </p>
+              <a
+                class="btn btn-sm btn-primary"
+                href="detail.html?dest=senaru"
+                data-dest='{"name":"Air Terjun Senaru","location":"Senaru, Lombok Utara","description":"Air terjun berundak dengan pemandangan hijau pegunungan."}'
+                >Lihat Detail</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img
+              src="assets/img/destinations/kuta.jpg"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pantai Kuta Lombok</h5>
+              <p class="card-text">Pantai populer untuk surfing dan foto.</p>
+              <a
+                class="btn btn-sm btn-primary"
+                href="detail.html?dest=kuta"
+                data-dest='{"name":"Pantai Kuta Lombok","location":"Kuta, Lombok","description":"Pantai dengan bukit-bukit karang dan pasir putih."}'
+                >Lihat Detail</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-center">
+      <div class="container">
+        <p>© 2025 Wisata Lombok</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

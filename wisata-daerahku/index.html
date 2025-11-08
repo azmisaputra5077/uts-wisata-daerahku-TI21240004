@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wisata Lombok - Beranda</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">Wisata Lombok</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+          aria-controls="nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="nav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="destinasi.html">Destinasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeri.html">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontak.html">Kontak & Ulasan</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+      <div class="container">
+        <h1 class="display-5 fw-bold">Selamat Datang di Wisata Lombok</h1>
+        <p class="lead">
+          Panduan destinasi, galeri foto, dan ulasan pengunjung — siap
+          menjelajah!
+        </p>
+        <p>
+          <a class="btn btn-primary btn-lg" href="destinasi.html"
+            >Lihat Destinasi</a
+          >
+        </p>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container my-4">
+      <section class="row">
+        <div class="col-md-8">
+          <h3>Destinasi Pilihan</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <img
+                  src="assets/img/destinations/gili.jpg"
+                  class="card-img-top"
+                  alt="Gili"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Gili Trawangan</h5>
+                  <p class="card-text">
+                    Pulau kecil dengan pasir putih dan snorkeling yang indah.
+                  </p>
+                  <a
+                    class="btn btn-sm btn-outline-primary"
+                    href="detail.html?dest=gili"
+                    >Lihat Detail</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <img
+                  src="assets/img/destinations/senaru.jpg"
+                  class="card-img-top"
+                  alt="Senaru"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Air Terjun Senaru</h5>
+                  <p class="card-text">
+                    Air terjun alami di kawasan pegunungan dengan jalur
+                    trekking.
+                  </p>
+                  <a
+                    class="btn btn-sm btn-outline-primary"
+                    href="detail.html?dest=senaru"
+                    >Lihat Detail</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-3">
+                <img
+                  src="assets/img/destinations/kuta.jpg"
+                  class="card-img-top"
+                  alt="Kuta"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pantai Kuta Lombok</h5>
+                  <p class="card-text">
+                    Pantai berpasir indah, cocok untuk surfing dan foto.
+                  </p>
+                  <a
+                    class="btn btn-sm btn-outline-primary"
+                    href="detail.html?dest=kuta"
+                    >Lihat Detail</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="col-md-4">
+          <h5>Kalkulator Estimasi Perjalanan</h5>
+          <form id="calcForm" class="mb-3">
+            <div class="mb-2">
+              <label class="form-label">Harga per orang (Rp)</label>
+              <input
+                id="pricePerPerson"
+                class="form-control"
+                type="number"
+                value="250000"
+              />
+            </div>
+            <div class="mb-2">
+              <label class="form-label">Jumlah orang</label>
+              <input
+                id="qty"
+                class="form-control"
+                type="number"
+                value="2"
+                min="1"
+              />
+            </div>
+            <div class="mb-2">
+              <label class="form-label">Biaya transport (Rp)</label>
+              <input
+                id="transport"
+                class="form-control"
+                type="number"
+                value="50000"
+              />
+            </div>
+            <button class="btn btn-primary btn-sm" type="submit">Hitung</button>
+            <p class="mt-2 calc-result" id="calcResult"></p>
+          </form>
+
+          <h5>Kontak Pengelola</h5>
+          <p>Tel: +62 831 2954 6742<br />Email: azmisyaputra5077@gmail.com</p>
+        </aside>
+      </section>
+
+      <hr />
+      <section>
+        <h4>Ulasan Pengunjung</h4>
+        <div class="list-group">
+          <div class="list-group-item">
+            <strong>Ani</strong> <span class="text-muted">- 4/5</span>
+            <p>
+              Indah dan suasana tenang. Sangat direkomendasikan untuk relaksasi.
+            </p>
+          </div>
+          <div class="list-group-item">
+            <strong>Budi</strong> <span class="text-muted">- 5/5</span>
+            <p>Snorkeling di Gili luar biasa! Pelayanan bagus.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-center">
+      <div class="container">
+        <p>© 2025 Wisata Lombok • Dibuat untuk UTS Front-End Developer</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
